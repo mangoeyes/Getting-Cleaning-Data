@@ -21,7 +21,10 @@ The same holds for the training set.
 
 About the script and the tidy dataset
 -------------------------------------
-- A script called run_analysis.R is created which will merge the test and training sets together.
-- Prerequisites for this script is that the UCI HAR Dataset must be extracted and put under the working directory
-- After merging testing and training, only columns that have to do with mean and standard deviation are kept, after which labels are added
-- Lastly, the script will create a tidy data set containing the means of all the columns per test subject and per activity.
+A script called run_analysis.R is created which will merge the test and training sets together.
+
+Prerequisites for this script is that the UCI HAR Dataset must be extracted and put under the working directory
+
+After merging testing and training, only columns that have to do with mean and standard deviation are kept, after which labels are added
+
+Lastly, the script will create a tidy data set containing the means of all the columns per test subject and per activity.
