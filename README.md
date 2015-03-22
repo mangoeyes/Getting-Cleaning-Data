@@ -9,13 +9,13 @@ About the raw data
 ------------------
 
 The features (561 of them) are unlabeled and can be found in the X_test.txt. 
-The activity labels are in the y_test.txt file.
-The test subjects are in the subject_test.txt file.
+###The activity labels are in the y_test.txt file.
+###The test subjects are in the subject_test.txt file.
 
-The features.txt file contains the labels of each column in X_test.txt 
-The activity_labels.txt file contains the activity names for each activity labels in y_test.txt
+###The features.txt file contains the labels of each column in X_test.txt 
+###The activity_labels.txt file contains the activity names for each activity labels in y_test.txt
 
-The same holds for the training set.
+###The same holds for the training set.
 
 About the script and the tidy dataset
 -------------------------------------
