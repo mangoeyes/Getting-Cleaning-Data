@@ -18,28 +18,24 @@ For each record in the dataset it is provided:
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
 
-### Section 1. Merge the training and the test sets to create one data set.
+### Section 1. rRead all necessary data 
+
 After setting the source directory for the files, read into tables the data located in
 - features.txt
 - activity_labels.txt
 - subject_train.txt
-- x_train.txt
+- X_train.txt
 - y_train.txt
 - subject_test.txt
-- x_test.txt
+- X_test.txt
 - y_test.txt
+## Section 2. Merge the training and the test sets to create one data set.
 
-Assign column names and merge to create one data set.
-
-## Section 2. Extract only the measurements on the mean and standard deviation for each measurement. 
-Create a logcal vector that contains TRUE values for the ID, mean and stdev columns and FALSE values for the others.
-Subset this data to keep only the necessary columns.
+## Section 2. Assign column names and extract only the measurements on the mean and standard deviation for each measurement. 
+Create a numeric vector that contains the column about mean and standard deviation. Subset data set to keep only the necessary columns.
 
 ## Section 3. Use descriptive activity names to name the activities in the data set
-Merge data subset with the activityType table to cinlude the descriptive activity names
+Replace the activity id with the ActivityLabels table to inlude the descriptive activity names.
 
-## Section 4. Appropriately label the data set with descriptive activity names.
-Use gsub function for pattern replacement to clean up the data labels.
-
-## Section 5. Create a second, independent tidy data set with the average of each variable for each activity and each subject. 
-Per the project instructions, we need to produce only a data set with the average of each veriable for each activity and subject
+## Section 4. Create a independent tidy data set with the average of each variable for each activity and each subject. 
+We need to produce only a data set with the average of each veriable per activity and subject.
